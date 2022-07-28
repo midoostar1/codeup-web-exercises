@@ -1,5 +1,5 @@
 git init
-git add origin (your ssh key)
+git remote add origin (your ssh key)
 git add .
 git commit -m "your message"
 git status
