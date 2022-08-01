@@ -103,7 +103,7 @@ function applyDiscount(price, discountPercentage) {
 }
   var discount =  applyDiscount(45.99, 0.12)
 
+console.log(discount);
 
 
 
-}
