@@ -9,7 +9,7 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
   function sayHello(name){
-      return ("hello " + name)
+      return ("hello, " + name)
 }
 
 /**
@@ -19,8 +19,8 @@
  *
  * console.log 'helloMessage' to check your work
  */
- var helloMessage = sayHello("Amida")
-console.log(helloMessage)
+ var helloMessage = sayHello("Amida");
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -28,8 +28,8 @@ console.log(helloMessage)
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-var myName = "Amida"
-sayHello(myName)
+var myName = "Amida";
+sayHello(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -52,13 +52,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-function isTwo(number){
- if(number===2){
-     return true
- }else {return  false}
+function isTwo(number) {
+    return number===2
+
 }
-isTwo(random)
-console.log(isTwo(random))
+isTwo(random);
+console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -70,10 +69,10 @@ console.log(isTwo(random))
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(tipPercentage, amount){
-  return (tipPercentage/100) * amount
+function calculateTip(tipPercentage, total){
+  return (tipPercentage/100 * total)
 }
-var result = calculateTip(0.20, 20)
+var result = calculateTip(10, 200)
 console.log(result)
 /**
  * TODO:
@@ -83,6 +82,7 @@ console.log(result)
  */
 var bill = prompt("input your total bill")
 var tip = prompt("what percentage would you like to tip")
+
 alert("tip amount is " + calculateTip(tip, bill))
 /**
  * TODO:
@@ -99,7 +99,7 @@ alert("tip amount is " + calculateTip(tip, bill))
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(price, discountPercentage) {
-    return price - (discountPercentage / 100 * price)
+    return price - (discountPercentage * price)
 }
   var discount =  applyDiscount(45.99, 0.12)
 

@@ -177,7 +177,7 @@ var input = prompt("Input number")}
    alert("the number is even")
  }else {alert("the number is odd")}
 
-alert("your number + 100 is " + input + 100)
+alert("your number + 100 is " + (input.parseInt(input, 10) + 100))
 
 if(input<0){alert("your number is a negative number")}
 else {alert("your number is Positive")}
