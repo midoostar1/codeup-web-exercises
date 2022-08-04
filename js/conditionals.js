@@ -171,15 +171,16 @@ alert("your lucky number was " +luckyNumber +", your price before discount was "
  * HINT: The way we prompt for a value could be improved
  */
 var request = confirm("would you like to input a number")
-if (request === true){
-var input = prompt("Input number")}
- if(input % 2 === 0){
-   alert("the number is even")
- }else {alert("the number is odd")}
+if (request){
+var input= Number(prompt("Input number"))}
 
-alert("your number + 100 is " + (input.parseInt(input, 10) + 100))
+ if(isNaN(input)){ alert("number not valid")}
+  else{
+      if(input % 2===0){alert("the number is even")
+ }else if(input % 2 !==0){alert("the number is odd")}
 
-if(input<0){alert("your number is a negative number")}
-else {alert("your number is Positive")}
+alert("your number + 100 is " + (input + 100))
 
-if (input = NaN){alert("incorrect input" )}
+if(input <0 ){alert("your number is a negative number")}
+else {alert("your number is Positive")}}
+
