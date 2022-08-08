@@ -44,13 +44,23 @@ person.sayHello = function(){
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+  shoppers.forEach(value=>{
+      if (value.amount > 200){ console.log(`${value.name} amount before discount: ${value.amount}\
+          ,  discount: 12%  discounted amount: ${value.amount-(12/100*value.amount)}` )
 
-    /** TODO:
+      }else{console.log(`${value.name} amount before discount: ${value.amount}\
+      ,  discount: 0%  discounted amount: ${value.amount}`)
+
+      }
+  })
+
+
+  /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
