@@ -16,7 +16,7 @@ var person ={
         lastName: "fombutu"
     }
 console.log(person.firstName)
-
+console.log(person.lastName)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -50,12 +50,17 @@ person.sayHello = function(){
         {name: 'George', amount: 320}
     ];
   shoppers.forEach(value=>{
-      if (value.amount > 200){ console.log(`${value.name} amount before discount: ${value.amount}\
-          ,  discount: 12%  discounted amount: ${value.amount-(12/100*value.amount)}` )
+      if (value.amount > 200)
+      {   console.log(`${value.name}`)
+          console.log(`amount before discount: ${value.amount}`)
+          console.log(`discount: 12%`)
+          console.log(`discounted amount: ${value.amount-(12/100*value.amount)}`)
+          console.log(`---------------------`)
 
-      }else{console.log(`${value.name} amount before discount: ${value.amount}\
-      ,  discount: 0%  discounted amount: ${value.amount}`)
-
+      }else{console.log(`${value.name}`)
+            console.log(`no discount`)
+            console.log(`amount: ${value.amount}`)
+console.log(`------------`)
       }
   })
 
@@ -72,6 +77,32 @@ person.sayHello = function(){
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+var books = [
+      {tittle: "My Touchstones",
+          author:{
+                firstName: "Alan",
+                lastName: "Cheuse"}},
+      {tittle: "An Interview with Rita Dove",
+          author:{
+                firstName: "Elizabeth",
+                lastName: "Alexander"}},
+      {tittle: "writting and Moaning"
+          ,author:{
+                firstName: "Alan",
+                lastName: "Cheuse"}},
+      {tittle: "The Muse in the News",
+          author:{
+                firstName: "Andrew",
+                lastName: "Ciofalo"}},
+      {tittle: "Italicized Writings",
+      author:{
+                firstName: "Diana",
+                lastName: "Garcia"
+    }}
+  ]
+
+
+
 
     /**
      * TODO:
@@ -97,6 +128,13 @@ person.sayHello = function(){
      *      ---
      *      ...
      */
+books.forEach(function (book, index, ){
+console.log(`Book # ${index+1}`)
+console.log(`Title: ${book.tittle}`)
+ console.log(`Author: ${book.author.firstName}  ${book.author.lastName}`)
+ console.log(` ---` )
+    })
+
 
     /**
      * Bonus:
@@ -108,5 +146,32 @@ person.sayHello = function(){
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+var books = []
+    function createBook(title, author){
+        var book = {
+            tittle: title,
+            author: author
+        }
+        books.push(books)
+        return book
+}
+    console.log(books);
+    console.log(createBook( "myBook", "myAuthor"))
+    console.log(books)
+    console.log(createBook("cats", "doctor"))
+    console.log(books)
+
+    function showBookInfo(book){
+        // console.log(`Book # ${index + 1}`);
+        console.log(`Title: ${book.title}`);
+        console.log(`Author: ${book.author.firstName} ${book.author.lastName}`);
+        console.log("---");
+    }
+
+    books.forEach(function (book, index){
+        console.log(`Book # ${index + 1}`);
+        showBookInfo(book)
+    });
+
 
 })();
