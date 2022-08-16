@@ -1,4 +1,70 @@
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center;
 }
+header {
+    text-decoration: underline;
+    color: blue;
+    background-color: #aaaaaa;
+}
+body{
+background: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg" );
+
+}
+ul{
+    list-style: square;
+}
+.pics{
+    position: relative;
+    border: 4px solid black;
+}
+ .p1 {
+    position: absolute;
+    right:0;
+
+}
+.p2 {
+    position: absolute;
+    right:0;
+bottom: 0;
+}
+.p1, .p2, .p3, .p4{
+    border:2px solid cornflowerblue;
+}
+
+html{
+    font-family: 'Tajawal', sans-serif;
+}
+ table {
+    border-collapse: collapse;
+     margin-bottom: 20px;
+
+ }
+
+
+td,th,tr{
+    border: 1px solid black;
+    text-align: left;
+    width: 50%;
+}
+th {
+    height: 40px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+img{
+    width: 700px;
+    height: 500px;
+}
+footer{
+    background-color: #aaaaaa;
+    height: 40px;
+}
+
+
+
+
