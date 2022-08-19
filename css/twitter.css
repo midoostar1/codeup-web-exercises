@@ -110,30 +110,32 @@ width: calc(25% - 1em);
 
 .container{
     margin-top: 2em;
+    margin-left: 2em;
 }
 .media{
     background-color: var(--light-bg);
     border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     width: 100%;
-
+    overflow: auto;
 }
 
-.media-image{
+.media-image {
     width: 50px;
     margin-top: 1.33em;
     float: left;
-
 }
 
 .media-body{
     width: calc(100% - 50px);
+    float: left;
 
-   clear: right;
+
 
 }
 .profile-items{
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 .profile-entry{
     margin: .5em;
