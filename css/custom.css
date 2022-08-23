@@ -1,0 +1,14 @@
+.container{
+
+}
+.jumbotron{
+    background-image: url("../img/pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 346px;
+
+}
+.jumbotron h1{
+    width: 100%;
+    padding-left: 30%;
+}
