@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+
+<!--     NAV BAR-->
 <div class="container-fluid">
 <nav class="navbar navbar-expand-md  navbar-light bg-light  ">
 
@@ -41,6 +43,7 @@
         </nav>
 </div>
 
+<!--     JUMBOTRON-->
 <div class="container mx-auto w-75">
     <div class="jumbotron d-flex justify-content-center align-items-center m-2">
         <h1 class="d-none d-sm-block w-100 d-flex-column justify-content-center align-self-center align-items-center bg-light  text-dark bg-opacity-50 ">Welcome to Pizza World</h1>
@@ -50,21 +53,77 @@
     <br>
 
     <h2>Build your own pizza!</h2>
+
+<!--    NAV TABS-->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="size-crust-tab" data-bs-toggle="tab" data-bs-target="#size-crust" type="button" role="tab" aria-controls="size-crust" aria-selected="true">Size and Crust</button>
+            <button class="nav-link active" id="size-crust-tab" data-bs-toggle="tab" data-bs-target="#size-crust" type="button" role="tab" aria-controls="size-crust" aria-selected="true"><span class="badge bg-secondary m-2">1</span>Size and Crust</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="cheese-sauce-tab" data-bs-toggle="tab" data-bs-target="#cheese-sauce" type="button" role="tab" aria-controls="cheese-sauce" aria-selected="false">Cheese and Sauce</button>
+            <button class="nav-link" id="cheese-sauce-tab" data-bs-toggle="tab" data-bs-target="#cheese-sauce" type="button" role="tab" aria-controls="cheese-sauce" aria-selected="false"><span class="badge bg-secondary m-2">2</span>Cheese and Sauce</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings" type="button" role="tab" aria-controls="toppings" aria-selected="false">Toppings</button>
+            <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings" type="button" role="tab" aria-controls="toppings" aria-selected="false"><span class="badge bg-secondary m-2">3</span>Toppings</button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="size-crust-tab">...</div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="cheese-sauce-tab">...</div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="toppings-tab">...</div>
+    </div>
+
+    <div class="card mt-0" style="width: 100%;">
+<!--        CARD HEADER-->
+        <div class="card-header text-white bg-primary">Choose size and Crust</div>
+        <div class="card-body">
+        <ul class="list-group ">
+            <li class="card-title">Hand Tossed</li>
+            <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+
+            <!--            FIRST CHECKBOX-->
+
+            <div class="form-check form-list">
+            <li class="list-group-item ">
+                <input class="form-check-input" type="radio" name="tossed" id="small">
+                <label class="form-check-label" for="small">
+                    Small(10")
+                </label>
+            </li>
+                <li class="list-group-item">
+            <input class="form-check-input" type="radio" name="tossed" id="mediums">
+            <label class="form-check-label" for="mediums">
+                Medium(12")
+            </label>
+                </li>
+            </div>
+        </ul>
+
+<!--           CRISPY-->
+        <ul class="list-group ">
+            <li class=class="card-title">Crispy Thin</li>
+            <li class="list-group-item">Thin enough fot optimum crispy to crunchy ratio</li>
+
+            <div class="form-check form-list">
+                <li class="list-group-item ">
+                    <input class="form-check-input" type="radio" name="crispy" id="medium">
+                    <label class="form-check-label" for="medium">
+                        Medium(12")
+                    </label>
+                </li>
+                <li class="list-group-item ">
+                    <input class="form-check-input" type="radio" name="crispy" id="large">
+                    <label class="form-check-label" for="large">
+                        Large(14")
+                    </label>
+                </li>
+            </div>
+
+
+        </ul>
+        </div>
+        <div class="card-footer bg-light  d-flex justify-content-end align-items-center">
+           <p class="text-white p-2 rounded bg-primary ml-3 d-flex justify-content-end align-items-center mt-2"> Next Step> </p>
+        </div>
     </div>
 
 </div>
