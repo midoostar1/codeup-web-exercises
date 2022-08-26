@@ -15,7 +15,7 @@
 
 <!--     NAV BAR-->
 <div class="container-fluid">
-<nav class="navbar navbar-expand-md  navbar-light bg-light  ">
+    <nav class="navbar navbar-expand-md  navbar-light bg-light  ">
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class ="navbar-nav me-auto mb-2 mb-lg-0">
@@ -39,8 +39,8 @@
                 <li class="nav-item login"><a class="nav-link" href="">Sign UP!</a></li>
             </ul>
 
-            </div>
-        </nav>
+        </div>
+    </nav>
 </div>
 
 <!--     JUMBOTRON-->
@@ -54,7 +54,7 @@
 
     <h2>Build your own pizza!</h2>
 
-<!--    NAV TABS-->
+    <!--    NAV TABS-->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="size-crust-tab" data-bs-toggle="tab" data-bs-target="#size-crust" type="button" role="tab" aria-controls="size-crust" aria-selected="true"><span class="badge bg-secondary m-2">1</span>Size and Crust</button>
@@ -73,56 +73,38 @@
     </div>
 
     <div class="card mt-0" style="width: 100%;">
-<!--        CARD HEADER-->
-        <div class="card-header text-white bg-primary">Choose size and Crust</div>
+        <!--        CARD HEADER-->
+        <div class="card-header text-white bg-primary">Choose Cheese and Sauce</div>
         <div class="card-body">
-        <ul class="list-group ">
-            <li class="card-title bg-light">Hand Tossed</li>
-            <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+                <p class="card-title bg-light">Cheese</p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="cheese" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    How Much
+                </button>
+                <div class="dropdown-menu" aria-labelledby="cheese">
+                    <a class="dropdown-item" href="#">No Cheese</a>
+                    <a class="dropdown-item" href="#">Normal</a>
+                    <a class="dropdown-item" href="#">Extra</a>
+                </div>
 
-            <!--            FIRST CHECKBOX-->
+                <p class="card-title bg-light">Sauce</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="Sauce" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        What Type
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Sauce">
+                        <a class="dropdown-item" href="#">No Cheese</a>
+                        <a class="dropdown-item" href="#">Normal</a>
+                        <a class="dropdown-item" href="#">Extra</a>
+                    </div>
 
-            <div class="form-check form-list">
-            <li class="list-group-item ">
-                <input class="form-check-input" type="radio" name="tossed" id="small">
-                <label class="form-check-label" for="small">
-                    Small(10")
-                </label>
-            </li>
-                <li class="list-group-item">
-            <input class="form-check-input" type="radio" name="tossed" id="mediums">
-            <label class="form-check-label" for="mediums">
-                Medium(12")
-            </label>
-                </li>
-            </div>
-        </ul>
-
-<!--           CRISPY-->
-        <ul class="list-group ">
-            <li class="card-title bg-light">Crispy Thin</li>
-            <li class="list-group-item">Thin enough fot optimum crispy to crunchy ratio</li>
-
-            <div class="form-check form-list">
-                <li class="list-group-item ">
-                    <input class="form-check-input" type="radio" name="crispy" id="medium">
-                    <label class="form-check-label" for="medium">
-                        Medium(12")
-                    </label>
-                </li>
-                <li class="list-group-item ">
-                    <input class="form-check-input" type="radio" name="crispy" id="large">
-                    <label class="form-check-label" for="large">
-                        Large(14")
-                    </label>
-                </li>
             </div>
 
 
-        </ul>
+
         </div>
         <div class="card-footer bg-light  d-flex justify-content-end align-items-center">
-           <p class="text-white p-2 rounded bg-primary ml-3 d-flex justify-content-end align-items-center mt-2"> Next Step> </p>
+            <p class="text-white p-2 rounded bg-primary ml-3 d-flex justify-content-end align-items-center mt-2"> <previous Next> </previous>
         </div>
     </div>
 
