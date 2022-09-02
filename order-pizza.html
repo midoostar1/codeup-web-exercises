@@ -68,7 +68,7 @@
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="size-crust-tab">
+        <div class="tab-pane fade show active" id="size-crust" role="tabpanel" aria-labelledby="size-crust-tab">
 
             <div class="card mt-0" style="width: 100%;">
                 <!--        CARD HEADER-->
@@ -126,35 +126,35 @@
 
 
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="cheese-sauce-tab">
+        <div class="tab-pane fade" id="cheese-sauce" role="tabpanel" aria-labelledby="cheese-sauce-tab">
 
             <div class="card mt-0" style="width: 100%;">
                 <!--        CARD HEADER-->
                 <div class="card-header text-white bg-primary">Choose Cheese and Sauce</div>
                 <div class="card-body">
                     <p class="card-title bg-light">Cheese</p>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="cheese" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            How Much
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="cheese">
-                            <a class="dropdown-item" href="#">No Cheese</a>
-                            <a class="dropdown-item" href="#">Normal</a>
-                            <a class="dropdown-item" href="#">Extra</a>
-                        </div>
+                    <p >  How Much</p>
+
+                    <div class="input-group mb-3 ">
+                        <label  for="inputGroupSelect01"></label>
+                        <select class="form-select"  id="inputGroupSelect01">
+                            <option selected>Normal</option>
+                            <option value="1">Extra</option>
+                            <option value="2">No Cheese</option>
+                        </select>
+                    </div>
+
 
                         <p class="card-title bg-light">Sauce</p>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="Sauce" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                What Type
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="Sauce">
-                                <a class="dropdown-item" href="#">No Cheese</a>
-                                <a class="dropdown-item" href="#">Normal</a>
-                                <a class="dropdown-item" href="#">Extra</a>
-                            </div>
-
-                        </div>
+                    <p>What Type?</p>
+                    <div class="input-group mb-3 ">
+                        <label  for="inputGroupSelect01"></label>
+                        <select class="form-select"  id="inputGroupSelect0">
+                            <option selected>Tomato</option>
+                            <option value="1">Marina</option>
+                            <option value="2">No Sauce</option>
+                        </select>
+                    </div>
 
 
 
