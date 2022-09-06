@@ -1,4 +1,5 @@
 var allBtn = document.getElementsByClassName("btn")
+var undo = document.getElementById("undo")
 var btnGreen = document.getElementById("green")
 var btnBlue = document.getElementById("blue")
 var btnRed = document.getElementById("red")
@@ -20,7 +21,11 @@ btnRed.addEventListener("click", function (){
     btnRed.style.backgroundColor = "red"
 })
 
-allBtn.
-forEach((item)=>{
-   item.style.backgroundColor = "black"
+
+undo.addEventListener("click", function (){
+    for (i=0; i<allBtn.length; i++){
+        allBtn[i].style.backgroundColor = "black";
+    }
 })
+
+
