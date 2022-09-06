@@ -20,6 +20,7 @@ body{
     border-radius: 20px;
     padding: 1px;
     align-items: center;
+    display: none;
 
 }
 .xtime{

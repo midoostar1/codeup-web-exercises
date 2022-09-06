@@ -28,4 +28,9 @@ function sum(){
 array = [1, 2, 3, 4, 5]
 array.forEach((value, index)=>{
     console.log(`the item at index ${index} is ${value}`)
+
 })
+
+var btn = document.querySelector("button")
+
+var newWindow = setTimeout()
