@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       body{
+           border-radius: 20px;
+           width: 70%;
+           height: 800px;
+           margin: 0 auto;
+           border: 3px solid lightskyblue;
+           align-content: center;
+           text-align: center;
+           background: #DDDDDD;
+
+       }
+       .konami{
+           position: relative;
+           align-content: center;
+           justify-content: center;
+           background: crimson;
+           color: white;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           margin-top: 200px;
+           font-size: 1em;
+           font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+           border: 1px solid blue;
+           border-radius: 20px;
+           animation-name: box-move;
+           animation-duration: 4s;
+           animation-iteration-count:3 ;
+width: 30%;
+          margin-right: auto;
+           margin-left: auto;
+           display: none;
+       }
+       @keyframes box-move {
+           0% {background: crimson;left: 0px;top:0px; }
+           25% {background: darkviolet;left: 250px;top:0px;}
+           50% {background: #3B94D9;left: 250px; top: 250px;}
+           75% {background: #ecda69;left: -250px; top: 250px;}
+           100% {background: #75de8b;left: 0px; bottom: 0px;}
+       }
+
+    </style>
+</head>
+<body>
+<h1>Konami Code</h1>
+<p>input the konami code for more lives</p>
+<div class="konami">
+    <p>:)</p>
+<h2><strong>congratulations</strong> </h2>
+    <p> you have been added</p>
+    <p><strong>30 lives</strong> </p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="/js/jquery.js"></script>
+<script>
+    "use strict";
+var body = $("body")
+    var colors = ["azure", "Aquamarine", "Cornsilk", "Cyan", "Gold", "LightPink", "LightYellow", "MistyRose", "Silver", "Yellow", "Aquamarine", "Cornsilk","Aquamarine", "Cornsilk",]
+   var random = Math.floor(Math.random()*colors.length)
+
+
+  function display(){
+    $(".konami").css("display", "block")
+
+
+  }
+
+
+
+
+
+//  var colorR = setInterval(function (){
+//     body.css("background", colors[random])
+// }, 1000)
+    //keyup keys 38 38 40 40 37 39 37 39 66 65 13
+    var count = 0
+    $(window).keydown(function (e){
+
+       switch (e.which) {
+           case 38:
+               if (count===0 || count===1){
+                   count++;
+               }
+               else count=0;
+               break;
+
+           case 40:
+               if (count===2 || count===3){
+                   count++;
+               }
+               else count=0;
+               break;
+
+           case 37:
+               if (count===4 || count===6){
+                   count++;
+               }
+               else count=0;
+               break;
+           case 39:
+               if (count===5 || count===7){
+                   count++;
+               }
+               else count=0;
+               break;
+           case 66:
+               if (count===8 ){
+                   count++;
+               }
+               else count=0;
+               break;
+           case 65:
+               if (count===9 ){
+                   count++;
+               }
+               else count=0;
+               break;
+           case 13:
+               if (count===10 ){
+                display()
+                   setInterval(function (){
+                       body.css("backgroundColor",   colors[random ++])
+                       display()
+                   }, 1000)
+
+
+
+               }
+               else count=0;
+               break;
+           default:
+               count = 0
+       }
+
+
+    })
+
+
+    // $(document).keyup(function(event){
+    //     console.log(event.keyCode);
+    // });
+</script>
+</body>
+</html>
