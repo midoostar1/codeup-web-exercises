@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+body{
+    line-height: 2em;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="container bg-light my-1">
+    <div class="header">
+<h1 class="text-center my-1">10 FAQs about national parks</h1>
+    </div>
+<dl>
+    <dt>What government agency oversees the National Park Service?</dt>
+    <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks</dd>
+    <dt>How many employees are in the National Park Service?</dt>
+    <dd class="invisible">
+        <ul>
+       <li> Permanent, temporary, and seasonal employees: Approximately 20,000</li>
+       <li>Volunteers: More than 279,000 in 2019</li>
+        </ul>
+    </dd>
+    <dt>How old is the National Park System?</dt>
+    <dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the National Park System timeline.</dd>
+    <dt>What is the origin of the National Park Service arrowhead?</dt>
+    <dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead itself representing historical and archeological values. Read more about the history of the arrowhead and other elements of NPS visual design.
+    </dd>
+    <dt>How many people visit the national parks?
+    </dt>
+    <dd class="invisible">Total recreation visitors to the national parks in 2021: 297,115,406.
+    </dd>
+    <dt>What is the National Park Service budget?</dt>
+    <dd class="invisible">
+        <ul>
+       <li>Fiscal Year (FY) 2014 Enacted: $2.98 billion</li>
+        <li> 2015 Enacted: $2.615 billion</li>
+        <li>2016 Enacted:$2.851 billion</li>
+        <li> 2017 Enacted: $2.932 billion</li>
+    </ul>
+    </dd>
+
+    <dt>How do I make reservations for camping/lodging in national parks?</dt>
+    <dd class="invisible">For campground reservations, visit Recreation.gov. Not all parks participate in this service; many campgrounds are first come, first served. For more information on specific camping and lodging services offered at the park(s) of your interest, please check specific park websites. You can also learn more about camping in national parks and find a map of parks with camping opportunities.</dd>
+    <dt>How do I reserve a tour in a park?</dt>
+    <dd class="invisible">You can book some park tours through Recreation.gov such as Pearl Harbor National Memorial, many Mammoth Cave National Park cave tours, Independence National Historical Park tours, and more. Not all parks participate in this reservation service. For more information on tours offered at a specific park, please see the park search.</dd>
+    <dt>Can I bring my pet to a national park?</dt>
+    <dd class="invisible">Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.</dd>
+    <dt>Can I bring my service dog to a national park?
+    </dt>
+    <dd class="invisible">Yes, service dogs are legally permitted anywhere in a park that visitors can go. Learn more about service animals in national parks, including the difference between service animals and emotional support animals.</dd>
+</dl>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+
+
+var visible = $("<p><em>click here to view all content</em></p>").appendTo(".header").css("text-align","center").css("color","blue")
+
+   visible.click(function () {
+       $("dd").toggleClass("invisible")
+   })
+$("dt").click(function (){
+    $(this).css("background","lightskyblue")
+})
+</script>
+</body>
+</html>
