@@ -26,21 +26,21 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
-    var returnData
-    $.ajax("data/inventory.json").done(function (data) {
-        var returnData = data
-        console.log(returnData)
+$.get('data/inventory.json', function data(data){
+    console.log(data)
+    var tbody = ""
+   $(data).each(function (index, element){
+       tbody += "<tr>"
+       tbody += "<td>" + element.title + "</td>"
+       tbody += "<td>" + element.quantity + "</td>"
+       tbody += "<td>" + element.categories + "</td>"
+       tbody += "<td>" + element.price + "</td>"
 
-        function renderproduct(tools) {
-            var html = $("insertProducts")
+   })
+    $("#insertProducts").append(tbody)
 
-        }
+})
 
-
-
-
-
-    })
 
 
     // TODO: Take the data from inventory.json and append it to the products table
