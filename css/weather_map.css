@@ -1,5 +1,7 @@
 .card{
-    width: 16rem;
+    width: 14rem;
+    margin: 0 10px;
+    color: #4f4b4b;
 }
 #map{
    width: 90vw;

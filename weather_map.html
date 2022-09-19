@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Cache-control" content="no-cache">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -21,7 +21,7 @@
 </nav>
 <div class="container mt-3 ">
 
-    <form class="row  align-items-center mb-2">
+
 
         <div class="col-auto">
             <label for="search" class="col-form-label">Place</label>
@@ -32,22 +32,24 @@
         <div class="col-auto">
             <button id="btn" class="btn btn-primary " type="submit">Find</button>
         </div>
-    </form>
+
 
     <!--    main display container-->
     <div class="row justify-content-center">
-    <div class="col-12 w-100">
-    <div class="row row-cols-5">
+    <div class="col-12 ">
+    <div id="days-container" class="row row-cols-5 ">
 
         <!--        day1 card-->
         <div id="day1" class="card col">
             <div class="card-header d1">
 
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+            <ul class="list-group list-group-flush ">
+                <li class="list-group-item t1"><span class="min1"></span></li>
+                <li class="list-group-item i1"></li>
+                <li class="list-group-item di1">Description: </li>
+                <li class="list-group-item wi1 ">Wind Speed: </li>
+                <li class="list-group-item p1">Pressure: </li>
             </ul>
         </div>
 
@@ -57,9 +59,11 @@
 
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+                <li class="list-group-item t2"><span class="min2"></span></li>
+                <li class="list-group-item i2"></li>
+                <li class="list-group-item di2">Description: </li>
+                <li class="list-group-item wi2"></li>
+                <li class="list-group-item p2">Pressure: </li>
             </ul>
         </div>
 
@@ -69,9 +73,11 @@
 
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+                <li class="list-group-item t3"><span class="min3"></span></li>
+                <li class="list-group-item i3"></li>
+                <li class="list-group-item di3">Description: </li>
+                <li class="list-group-item wi3">Wind Speed: </li>
+                <li class="list-group-item p3">Pressure: </li>
             </ul>
         </div>
 
@@ -81,9 +87,11 @@
 
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+                <li class="list-group-item t4"><span class="min4"></span></li>
+                <li class="list-group-item i4"></li>
+                <li class="list-group-item di4">Description: </li>
+                <li class="list-group-item wi4">Wind Speed: </li>
+                <li class="list-group-item p4">Pressure: </li>
             </ul>
         </div>
 
@@ -91,10 +99,14 @@
         <div id="day5" class="card col">
             <div class="card-header d5">
 
+            </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+                <li class="list-group-item t5"><span class="min5"></span></li>
+                <li class="list-group-item i5"></li>
+                <li class="list-group-item di5">Description: </li>
+                <li class="list-group-item wi5">Wind Speed: </li>
+                <li class="list-group-item p5 ">Pressure: </li>
+
             </ul>
         </div>
     </div>
