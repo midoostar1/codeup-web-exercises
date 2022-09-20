@@ -16,12 +16,14 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <span class="navbar-brand mb-0 h1 text-white">Weather App</span>
-    <p id="current city" class="nav-item "></p>
+    <span class="navbar-brand mb-0 h1 text-white px-3">Weather App</span>
+    <p id="current-city" class="nav-item text-white text-end ms-auto px-4">Dallas tx</p>
+
 </nav>
 <div class="container mt-3 ">
 
 
+<div class="row">
 
         <div class="col-auto">
             <label for="search" class="col-form-label">Place</label>
@@ -32,83 +34,15 @@
         <div class="col-auto">
             <button id="btn" class="btn btn-primary " type="submit">Find</button>
         </div>
-
+</div>
 
     <!--    main display container-->
     <div class="row justify-content-center">
     <div class="col-12 ">
-    <div id="days-container" class="row row-cols-5 ">
+    <div id="days-container"  class="row row-cols-5 ">
 
-        <!--        day1 card-->
-        <div id="day1" class="card col">
-            <div class="card-header d1">
 
-            </div>
-            <ul class="list-group list-group-flush ">
-                <li class="list-group-item t1"><span class="min1"></span></li>
-                <li class="list-group-item i1"></li>
-                <li class="list-group-item di1">Description: </li>
-                <li class="list-group-item wi1 ">Wind Speed: </li>
-                <li class="list-group-item p1">Pressure: </li>
-            </ul>
-        </div>
 
-        <!--        day2 card-->
-        <div id="day2" class="card col">
-            <div class="card-header d2">
-
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item t2"><span class="min2"></span></li>
-                <li class="list-group-item i2"></li>
-                <li class="list-group-item di2">Description: </li>
-                <li class="list-group-item wi2"></li>
-                <li class="list-group-item p2">Pressure: </li>
-            </ul>
-        </div>
-
-        <!--        day3 card-->
-        <div id="day3" class="card col">
-            <div class="card-header d3">
-
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item t3"><span class="min3"></span></li>
-                <li class="list-group-item i3"></li>
-                <li class="list-group-item di3">Description: </li>
-                <li class="list-group-item wi3">Wind Speed: </li>
-                <li class="list-group-item p3">Pressure: </li>
-            </ul>
-        </div>
-
-        <!--        day4 card-->
-        <div id="day4" class="card col">
-            <div class="card-header d4">
-
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item t4"><span class="min4"></span></li>
-                <li class="list-group-item i4"></li>
-                <li class="list-group-item di4">Description: </li>
-                <li class="list-group-item wi4">Wind Speed: </li>
-                <li class="list-group-item p4">Pressure: </li>
-            </ul>
-        </div>
-
-        <!--        day5 card-->
-        <div id="day5" class="card col">
-            <div class="card-header d5">
-
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item t5"><span class="min5"></span></li>
-                <li class="list-group-item i5"></li>
-                <li class="list-group-item di5">Description: </li>
-                <li class="list-group-item wi5">Wind Speed: </li>
-                <li class="list-group-item p5 ">Pressure: </li>
-
-            </ul>
-        </div>
     </div>
     </div>
         <div class="col-11 text-center me-auto w-100">
@@ -117,8 +51,8 @@
 
 </div>
     <script id="search-js" defer src="https://api.mapbox.com/search-js/v1.0.0-beta.13/web.js"></script>
-    <script>
-<script src="js/mapbox-geocoder-utils.js"></script>
+
+<script src="js/mapbox-geocoder-utils.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -127,7 +61,7 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
 <script src="js/weather_map.js"></script>
-
+<script src="js/weather_map2.js"></script>
 </div>
 </body>
 </html>
